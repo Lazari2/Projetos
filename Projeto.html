@@ -1,0 +1,103 @@
+<!-- Desenvolvido por Guilherme Lázari -->
+
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styleProjeto.css"/>
+
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="scriptProjeto.js"></script>
+
+</head>
+<body>
+
+    
+    <nav class="navbar" style="background: linear-gradient(to right, black, white); border: 2px solid black;">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1" style ="color: rgb(247, 11, 11);font-size: 30px;">Cadastro de Séries</span>
+        </div>
+    </nav>
+
+    <header class="col mt-1">
+        <img class="img-fluid" src="https://static.vecteezy.com/ti/vetor-gratis/p3/15416101-hora-do-filme-sinal-banner-gravacao-projetor-icones-filme-antigo-quadro-de-rolo-de-imagem-festival-de-destaque-cartaz-de-cinema-ou-modelo-de-folheto-para-seu-projeto-ilustracaoial-gratis-vetor.jpg" alt="Topo" />
+    </header>
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+
+                    <form id="formulario" action="#">
+                    
+                        <div class="input-group mb-3 mt-2">
+                            <span class="input-group-text" id="basic-addon1">Nome</span>
+                            <input type="text" id="nome" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" id="basic-addon1">Gênero</span>
+                            <input type="text" id="genero" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+                        
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" id="basic-addon1">Temporadas</span>
+                            <input type="number" id="temporadas" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" id="basic-addon1">Episódios</span>
+                            <input type="number" id="episodios" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" id="basic-addon1">Plat Streaming</span>
+                            <input type="text" id="streaming" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" id="basic-addon1">Nota IMDb</span>
+                            <input type="number" id="nota" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="centralizar">
+                            <button id="btsalvar" type="button" class="btn btn-success" style="border:1px solid black;">Cadastrar</button>
+                            <button id="btlimpar" type="button" class="btn btn-warning" style="border:1px solid black;">Limpar Campos</button>
+                            <button id="btExcluirHistorico" type="button" class="btn btn-danger" style="border:1px solid black;">Apagar Histórico</button>
+                            <br>
+                        </div>
+                        <div id="formulario-poster-container" class="mt-3"></div>
+
+                    </form>
+            </div>
+
+            <div class="col-md-12 mt-4">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Poster</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Gênero</th>
+                        <th scope="col">Temporadas</th>
+                        <th scope="col">Episódios</th>
+                        <th scope="col">Plat Streaming</th>
+                        <th scope="col">Nota IMDb</th>
+                        <th scope="col">Alterar</th>
+                        <th scope="col">Excluir</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbSerie" class="serie-table-body"></tbody>
+                  </table>
+                  <div id="tbSerie-poster-container" class="poster-container"></div>
+            </div>
+        </div>
+
+
+    </main>
+
+    
+</body>
+</html>
